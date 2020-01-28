@@ -1,0 +1,151 @@
+/* ELEMENT CLASS for CHECK 																	*/
+.BORDER_RED    { border-style: dashed; color: red   ; }
+.BORDER_BLUE   { border-style: dashed; color: blue  ; }
+.BORDER_GREEN  { border-style: dashed; color: green ; }
+.BORDER_YELLOW { border-style: dashed; color: yellow; }
+/* ELEMENT CLASS for CHECK END																*/
+
+
+/* BASE STYLES SETTING																		*/
+body 		   { background:#FAFAFA		; margin: 0; padding: 0; overflow: hidden;  }
+.sapMFocus 	   { outline: 	none		; 											}
+.sapUiBody 	   { margin: 	0 !important; 											}
+.sapMNav 	   { overflow: 	auto		; 											}
+.sapMText 	   { color: 	#263238DE	; font-family: 'IBM Plex Sans', sans-serif; }
+
+div, button    { transition:ALL 0.5s;			 }
+button		   { cursor: pointer; outline: none; }
+button span	   { cursor: pointer; outline: none; }
+img 		   { opacity: 0.9; -webkit-user-select: none; }
+bdi 		   { text-shadow: none !important;			  }
+
+.noselect 	   {
+				 -webkit-touch-callout: none;
+				 -webkit-user-select: none;
+				 -khtml-user-select: none;
+				 -moz-user-select: none;
+				 -ms-user-select: none;
+				 user-select: none
+				}
+.sapMFocusable 	{ outline: 		none !important; 				  	}
+rect,svg,div,g	{ outline: 		none !important;					}		
+.sapViewInner 	{ display: block; position:relative; padding: 64px; overflow-x: hidden; }
+.sapViewInner>div{ display: block; 									}
+::selection 	{ background: 	#1DE9B6 !important;														}
+button:hover 	{ transform: 	translateY(2px); 														}
+input:focus 	{ outline: 		none !important; border: none !important; outline-offset: 0!important; 	}
+:focus 			{ outline: 		none !important; font-weight: 700; 										}
+::before		{ outline: 		none !important;					 									}
+			
+/* BASE STYLES SETTING END																	*/
+
+
+/* BUTTON STYLE 																			*/
+.btnLeftList 					{ width: 182px !important		  ; height: 38px !important; margin-bottom:10px; }
+.btnLeftList >span 				{ background: #90A4AED4 !important; border: none !important; transition: ALL 1s; }
+.btnLeftList bdi 				{ color: #FFF !important		  ;												 }
+.btnLeftList .sapBtnActive		{ backgroud: #FF5267			  ;												 }
+.btnLeftList:hover >span 		{ background:#FF5267 !important	  ;												 }
+
+.btnUnder 						{ width: 	  200px !important	  ; height: 38px !important; margin-bottom:10px; }
+.btnUnder >span 				{ background: #FF5267 !important  ; border: none !important; transition: ALL 1s; }
+.btnUnder bdi 					{ color: 	  #FFF !important	  ;												 }
+.btnUnder .sapBtnActive			{ background: #37474F			  ;												 }
+.btnUnder:hover >span 			{ background: #102027FF !important; 											 }
+/* BUTTON STYLE END 																		*/
+
+
+/* LEFT VIEW 																				*/
+.leftView 						{ width: auto !important; height: 100% !important; padding-left: 24px			;
+								  padding-right: 24px	; background: #4F5B62	 ;								}
+.leftView>div, 
+.leftView>div>div				{ width: 100% !important;														}
+.leftView .menuListBox img		{ width: 24px !important; height: 24px !important;								}
+.leftView .subTitle 			{ margin:0				; margin-left: 16px		 ; font-size: 16px; color: #FAFAFA !important; }
+.mvpLogoType 					{ width: 115px			; margin-top: 32px		 ; margin-bottom:32px			}
+/* LEFT VIEW END 																			*/
+
+/* CONTENT VIEW 																			*/
+.contentArea					{ display: flex; justify-content: space-between; 	   }
+.contentArea >div:nth-child(1) 	{ width:   30% ; min-width: 320px;					   }
+.contentArea >div:nth-child(2) 	{ width:   70% ; min-width: 700px; margin-left:  32px; }
+.titleArea						{ width:    	100%		; 
+								  min-width: 	700px		; 
+								  margin-bottom:32px		; 
+								  display: 		flex 		; 
+								  justify-content:space-between}
+.headCopy 						{ font-size:	3rem		; 
+								  font-weight: 	500			}
+.subTitle						{ font-size:	20px		; 
+								  font-weight: 	500			; 
+								  margin-top: 	16px		; 
+								  margin-bottom:16px		}
+.cardItemUI						{ width:  	    92%			; 
+								  margin:       2px			; 
+								  min-width:    300px		; 
+								  position:     relative	; 
+								  padding:      16px		; 
+								  margin-bottom:16px		; 
+								  border-radius:16px		;
+								  box-shadow: 0 1px 2px gray;
+								}		
+.cardItemUI >div 				{ width:  		50%!important    ;							 }
+.cardItemUI >div:nth-child(2) 	{ text-align: 	right!important  ; 							 }
+.cardItemStatus					{ color: 		#FF5267!important; 							 }
+.sapUiTableCell:focus 			{ outline: 		1px solid #CFD8DC !important; 				 }
+.cardItemTitle 					{ font-size: 	32px	; font-weight: 500	; 				 }
+.cardItemValue 					{ font-size: 	64px	; font-weight: 100	; opacity: 0.7;  }
+.cardItemUnit 					{ margin-top: 	16px	; margin-left: 4px	; opacity: 0.7;  }
+.chartArea 						{ height: 		260px	; background:#90A4AE; opacity: 0.1;  }
+.sampleChart					{ display: 		flex	; position: fixed	; 				 }
+
+/* UNDER PAGE VIEW */
+.underPageStyle 				{ justify-content:center            ;
+				    			  text-align: 	  center            ;
+								  background: 	  #C1D5E0 !important;
+				    			  width: 		  100%              ;
+				    			  position: 	  absolute          ;
+				    			  height: 		  100%              ;
+				    			  left: 		  0				    ;
+				    			  z-index: 		  2				    }
+
+.underPageStyle .headCopy 		{ margin-bottom: 	32px; 						}
+.underPageStyle .subTitle 		{ font-size: 		26px; margin-bottom: 64px;  }
+/* UNDER PAGE VIEW END */
+/* CONTENT VIEW END 																		*/
+
+
+
+/* RESPONSIVE MOBILE (~1000PX) */
+@media screen and (max-width: 1000px) {
+	
+	/* FLEX -> DISPLAY BLOCK */
+  .resposiveMaster .sapUiFixFlex { display: block;					}
+  .titleArea 					 { display: block;					}
+  .sapUiHLayoutChildWrapper 	 { display: block; width: auto; 	}
+  .contentArea 					 { display: block; 					}
+  .contentArea >div:nth-child(1) { display: block; min-width:100%;	}
+  
+  .mvpLogoType  				 { height: 50px !important ;
+    							   width:  auto !important ;
+    							   margin: 0 	!important }
+    							  
+  /* THIS IS LEFT MENU CONTROLL CLASS [responsiveMaster ~ ] 	*/
+  .resposiveMaster .sapUiFixFlexFixed:nth-child(1) { display: block; background: #4F5B62; width: 100% !important; height: 72px;  z-index: 3; }
+  .leftView 						  { display: flex ; }
+  .leftView>div>div>div 			  { display: flex ; flex-direction: row; width: 100%; justify-content: space-between; margin-top: 10px; }
+  .leftView .subTitle				  { margin:  0	  ; }
+  .responsiveMenu>div>div:nth-child(1){ display: flex ; padding-top: 12px; }
+  .responsiveMenu					  { flex-direction: row; }
+  .btnLeftList						  { width: 64px !important; margin-left: 16px; height: 38px !important; margin-bottom: 10px; }
+  .btnLeftList>span					  { overflow: eclipse; }
+  /* THIS IS LEFT MENU CONTROLL CLASS [responsiveMaster ~ ] END	*/
+
+  .cardItemUI		 				{ display: 	   flex !important }
+  .contentArea >div:nth-child(2) 	{ min-width:   100% !important ;
+									  margin-left: 0 	!important }
+}
+
+/* RESPONSIVE MOBILE (~1000PX) END */
+
+

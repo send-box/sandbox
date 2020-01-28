@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    #url: jdbc:postgresql://192.168.1.29:5432/tipsdb
+    url: jdbc:postgresql://localhost:5432/tipsdb
+    username: tipsuser
+    password: tipsuser
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false

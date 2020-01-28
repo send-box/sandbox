@@ -1,0 +1,30 @@
+  
+<mvc:View
+    xmlns="sap.m"
+    xmlns:t="sap.ui.table"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    controllerName="OpenUI5.controller.frame.Left">
+
+    <l:HorizontalLayout>
+        <l:content>
+            <VBox>
+                <Image              class="mvpLogoType"     src="/images/Logo.png"/>
+                <l:VerticalLayout   class="menuListBox">
+                <!-- Quick Start -->
+                    <VBox class="responsiveMenu">
+                        <l:HorizontalLayout>
+                            <Image  src="/images/Ico_List.png"/>
+                            <Text   text="Quick Start"	class="subTitle"/>
+                        </l:HorizontalLayout>
+                        <Button     id="contents1"  text="Air Pollution"      press=".onNavToContent1" class="btnLeftList"/>
+                        <Button     id="contents2"  text="Case Studies 2"     press=".onNavToContent2" class="btnLeftList"/>
+                        <Button     id="contents3"  text="Case Studies 3"     press=".onNavToContent3" class="btnLeftList"/>
+                    </VBox>
+                </l:VerticalLayout>
+            </VBox>
+        </l:content>
+    </l:HorizontalLayout>
+    
+</mvc:View>

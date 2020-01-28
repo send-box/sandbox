@@ -1,0 +1,143 @@
+<mvc:View 	
+	xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:t="sap.ui.table" 
+	xmlns:l="sap.ui.layout"
+	xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+	xmlns:viz.data="sap.viz.ui5.data"
+	controllerName="OpenUI5.controller.contents.Contents1">
+
+	<l:HorizontalLayout class="sapViewInner">
+		<l:content>
+			<VBox>
+				<!-- Title & Description Area -->
+				<l:HorizontalLayout class="titleArea">
+					<Text text="{i18n>contents1Title}" class="headCopy" />
+					<Text text="{i18n>contents1Description}" class="DescCopy" />
+				</l:HorizontalLayout>
+
+				<!-- Overview Content & Table Area -->
+				<l:HorizontalLayout class="contentArea">
+					<!-- Card List & Chart -->
+					<VBox>
+						<Text text="지역별 미세먼지" class="subTitle" />
+						<!-- <HBox class="chartArea" />-->
+						<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height='500px' width="500px" vizType='bar'>
+                			<viz:dataset>
+                    			<viz.data:FlattenedDataset data="{/list}">
+	                        		<viz.data:dimensions>
+	                            		<viz.data:DimensionDefinition name="stationName" value="{station_name}" />
+	                        		</viz.data:dimensions>
+	                        		<viz.data:measures>
+	                            		<viz.data:MeasureDefinition name="pm10value" value="{so2_value}" />
+	                        		</viz.data:measures>
+                    			</viz.data:FlattenedDataset>
+                			</viz:dataset>
+                			<viz:feeds>
+                    			<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="pm10value" />
+                    			<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="stationName" />
+                			</viz:feeds>
+            			</viz:VizFrame>
+												
+						<!-- Card -->
+						<Text text="Warning List" class="subTitle" />
+						<!-- Card First -->
+						<l:HorizontalLayout class="cardItemUI">
+							<VBox>
+								<HBox>
+									<Text text="SO2" class="cardItemTitle" />
+									<Text text="unit" class="cardItemUnit" />
+								</HBox>
+								<Text text="이산화황농도" />
+								<Text text="Status" class="cardItemStatus" />
+							</VBox>
+							<Text text="30.1" class="cardItemValue" />
+						</l:HorizontalLayout>
+
+						<!-- Card Second -->
+						<l:HorizontalLayout class="cardItemUI">
+							<VBox>
+								<HBox>
+									<Text text="SO2" class="cardItemTitle" />
+									<Text text="unit" class="cardItemUnit" />
+								</HBox>
+								<Text text="이산화황농도" />
+								<Text text="Status" class="cardItemStatus" />
+							</VBox>
+							<Text text="30.1" class="cardItemValue" />
+						</l:HorizontalLayout>
+
+						<!-- Card Third -->
+						<l:HorizontalLayout class="cardItemUI">
+							<VBox>
+								<HBox>
+									<Text text="SO2" class="cardItemTitle" />
+									<Text text="unit" class="cardItemUnit" />
+								</HBox>
+								<Text text="이산화황농도" />
+								<Text text="Status" class="cardItemStatus" />
+							</VBox>
+							<Text text="30.1" class="cardItemValue" ></Text>
+						</l:HorizontalLayout>
+					</VBox>
+					<!-- Table Area -->
+					<VBox>
+						<Text text="Detail Information" class="subTitle" ></Text>
+						<t:Table 
+								id="idTable"
+								selectionMode="None"
+								rows="{/}"
+								visibleRowCount="auto" 
+								width="100%">
+							<t:columns>
+								<t:Column resizable="true" hAlign="Center" width="150px">
+									<Label text="측정일" />
+									<t:template>
+										<Text text="{data_time}"></Text>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="100px">
+									<Label text="측정소" />
+									<t:template>
+										<Text text="{station_name}"/>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="100px">
+									<Label text="측정망" />
+									<t:template>
+										<Text text="{mang_name}"/>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="150px">
+									<Label text="통합대기환경수치" />
+									<t:template>
+										<Text text="{khai_value}"></Text>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="150px">
+									<Label text="통합대기환경지수" />
+									<t:template>
+										<Text text="{khai_grade}"></Text>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="100px">
+									<Label text="오존 농도" />
+									<t:template>
+										<Text text="{o3_value}"></Text>
+									</t:template>
+								</t:Column>
+								<t:Column resizable="true" hAlign="Center" width="100px">
+									<Label text="오존지수" />
+									<t:template>
+										<Text text="{o3_grade}"></Text>
+									</t:template>
+								</t:Column>
+							</t:columns>
+						</t:Table>
+					</VBox>
+				</l:HorizontalLayout>
+			</VBox>
+		</l:content>
+	</l:HorizontalLayout>
+</mvc:View>

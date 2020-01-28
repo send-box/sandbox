@@ -1,0 +1,19 @@
+<mvc:View
+	width="100%"
+	id="header"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	controllerName="OpenUI5.controller.frame.Header">
+
+	<l:HorizontalLayout class="headerMenuLayout">
+		<l:content>
+			<Image width="200px" src="/images/OpenUI5_Logo.png"/>
+			<l:HorizontalLayout>
+				<Text text="{i18n>headerTitle}"/>
+			</l:HorizontalLayout>
+		</l:content>
+	</l:HorizontalLayout>
+
+</mvc:View>
