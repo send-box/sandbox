@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-YBatchApplication<yBack>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.tips.yBatch.YBatchApplication",
+            "projectName": "yBack",
+            "args": ""
+        }
+    ]
+}
