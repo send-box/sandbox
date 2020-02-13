@@ -1,0 +1,7 @@
+2019:06:07 11:14:20.475 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested. 
+2019:06:07 11:14:20.491 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@58ae63a1: startup date [Fri May 31 18:29:07 KST 2019]; root of context hierarchy 
+2019:06:07 11:14:20.508 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans on shutdown 
+2019:06:07 11:14:20.508 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter : Unregistering JMX-exposed beans 
+2019:06:07 11:14:20.508 INFO  --- [RMI TCP Connection(2)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2019:06:07 11:14:20.508 INFO  --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2019:06:07 11:14:20.523 INFO  --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

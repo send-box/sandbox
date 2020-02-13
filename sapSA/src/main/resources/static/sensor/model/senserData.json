@@ -1,0 +1,10 @@
+{
+  "milk": [
+    {
+        "time": "08:01:00",
+        "Temperature": 25,
+        "Illuminance": 150,
+        "Humidity": 60
+    }
+   ]
+}

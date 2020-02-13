@@ -1,0 +1,17 @@
+{
+	"points": [
+		{"x": 0, "y": 35},
+		{"x": 8, "y": 53},
+		{"x": 20, "y": 10},
+		{"x": 30, "y": 30},
+		{"x": 40, "y": 52},
+		{"x": 100, "y": 73}
+	],
+	"leftTopLabel": "0M",
+	"rightTopLabel": "80M",
+	"leftBottomLabel": "June 1",
+	"rightBottomLabel": "June 30",
+	"size": "Responsive",
+	"threshold": 40,
+	"color": {"above": "Good", "below": "Error"}
+}
