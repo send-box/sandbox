@@ -92,8 +92,7 @@ public class ReaderRestApi implements ItemReader<List<ReaderReturnDTO>>
                 String url           = "http://openapi.airkorea.or.kr/openapi/services/rest/";
                 String serviceId     = "ArpltnInforInqireSvc"                                ;  // 대기오염정보 조회 서비스
                 String operationName = "getCtprvnRltmMesureDnsty"                            ;  // 시도별 실시간 측정정보 조회
-              //String serviceKey    = "bg9choiwFZX5JYcIIF76jFiVYe0VwiWdxdpCUldbALWxzJLNZA4Ipq2Z1SVqkZyWSW88og%2Bt8EiOCX9J%2BB3ZUw%3D%3D"  ;
-                String serviceKey    = "2%2Bxy%2FDG9FLV3s9hUtwRXX1%2F4KjR92LJqXblaoGqWPzs2u4s4ZxqgXnYQiEUNIAaoXjy66zBIafygmX8ayFFgRw%3D%3D";
+                String serviceKey    = "my_key"  ;
                 String numOfRows     = "100"                                  ;
                 String pageNo        = "1"                                    ;
                 String sidoName      = URLEncoder.encode(runningKey[i], "UTF-8");

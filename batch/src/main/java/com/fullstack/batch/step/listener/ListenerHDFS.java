@@ -50,7 +50,7 @@ public class ListenerHDFS extends JobExecutionListenerSupport
                 Configuration conf = new Configuration();
 
                 // 50010 포트에서 사용하는 IP에 hostname 을 사용하도록 설정
-                // 도커와 같은 가상IP 환경일 경우 실제 IP 를 찾기 때문에 파일은 생성이 되어도 datanode 에 쓸 때 IP를 찾기 못한다.
+                // 도커와 같은 가상IP 환경일 경우 실제 IP 를 찾기 때문에 파일은 생성이 되어도 datanode 에 쓸 때 IP를 찾지 못한다.
                 conf.set("dfs.client.use.datanode.hostname", "true");
                 
                 // 서버는 아래와 같이 설정
